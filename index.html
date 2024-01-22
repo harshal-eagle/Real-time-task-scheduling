@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Management System</title>
+</head>
+<body>
+    <div class="head_section">
+        
+        <h2>LOGO</h2>
+        
+     <ul>
+         <a href="\">Home</a>
+         <a href="\">about us</a>
+         <a href="\">services</a>
+         <a href="\">contact us</a>
+         <button class="btn_login">Task </button>
+     </ul>
+ </div>
+    <div class="container">
+        <h1>Task Management System</h1>
+        <form id="taskForm">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" required placeholder="Task Name">
+
+            <label for="taskDate">Date:</label>
+            <input type="date" id="taskDate" required>
+
+            <label for="taskTime">Time:</label>
+            <input type="time" id="taskTime" required>
+
+            <label for="taskPriority">Priority:</label>
+            <select id="taskPriority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <button type="button" onclick="addTask()" id="btn">ADD</button>
+        </form>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
